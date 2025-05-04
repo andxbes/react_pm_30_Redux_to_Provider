@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
 
-let globalState = [];
+let globalState = {};
 let listeners = [];
-let actions = [];
+let actions = {};
 
 export const useStore = () => {
     const setState = useState(globalState)[1];
