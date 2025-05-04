@@ -6,7 +6,8 @@ import { useStore } from '../../hooks-store/store';
 // import { ProductContext } from '../../context/product-context';
 
 const ProductItem = props => {
-  const dispatch = useStore()[1];
+  console.log('rendering');
+  const dispatch = useStore(false)[1];
   // const toggleFav = useContext(ProductContext).toggleFav;
   const toggleFavHandler = () => {
     // toggleFav(props.id);
